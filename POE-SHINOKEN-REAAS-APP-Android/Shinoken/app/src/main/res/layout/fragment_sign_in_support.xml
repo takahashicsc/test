@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_16"
+    tools:context=".ui.fragment.sign_in_support.SignInSupportFragment">
+
+    <TextView
+        android:id="@+id/sign_in_support_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_32"
+        android:gravity="center"
+        android:text="@string/sign_in_support_description"
+        android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_support_phone_number_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <LinearLayout
+        android:id="@+id/sign_in_support_phone_number_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_48"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_support_button_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_support_description">
+
+        <TextView
+            android:id="@+id/sign_in_support_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/sign_in_support_phone_number"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sign_in_support_phone_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/sign_in_support_phone_number_text"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_in_support_button_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_48"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_support_phone_number_layout">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/support_mail_button"
+            style="@style/Theme.Shinoken.PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_support_mail_form_title" />
+
+        <TextView
+            android:id="@+id/sign_in_support_button_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="24時間受付中"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

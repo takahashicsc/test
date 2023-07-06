@@ -1,0 +1,174 @@
+{
+  "latest": {
+    "month": "202102",
+    "total_value": 4000,
+    "items": [
+      {
+        "title": "電気代",
+        "slug": "electricity",
+        "value": 3690,
+        "category": "electricity",
+        "updated_at": "2021-04-02T01:10:43.196Z"
+      },
+      {
+        "title": "ガス代",
+        "slug": "gas",
+        "value": 3950,
+        "category": "gas",
+        "updated_at": "2021-04-02T01:10:43.196Z"
+      },
+      {
+        "title": "家賃",
+        "slug": "rent",
+        "value": 85000,
+        "category": "misc",
+        "updated_at": "2021-04-02T01:10:43.196Z"
+      },
+      {
+        "title": "水道代",
+        "slug": "water",
+        "value": 1000,
+        "category": "misc",
+        "updated_at": "2021-04-02T01:10:43.196Z"
+      },
+      {
+        "title": "管理費",
+        "slug": "administration",
+        "value": 4000,
+        "category": "misc",
+        "updated_at": "2021-04-02T01:10:43.196Z"
+      }
+    ],
+    "updated_at": "2021-04-02T01:10:43.196Z"
+  },
+  "last_updated_at": "2021-04-02T01:10:43.196Z",
+  "total": 3,
+  "data": [
+    {
+      "month": "202102",
+      "updated_at": "2021-04-02T01:10:43.196Z",
+      "total_value": 97640,
+      "items": [
+        {
+          "title": "電気代",
+          "slug": "electricity",
+          "value": 3690,
+          "category": "electricity",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "ガス代",
+          "slug": "gas",
+          "value": 3950,
+          "category": "gas",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "家賃",
+          "slug": "rent",
+          "value": 85000,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "水道代",
+          "slug": "water",
+          "value": 1000,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "管理費",
+          "slug": "administration",
+          "value": 4000,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        }
+      ]
+    },
+    {
+      "month": "202101",
+      "updated_at": "2021-04-02T01:10:43.196Z",
+      "total_value": 97370,
+      "items": [
+        {
+          "title": "電気代",
+          "slug": "electricity",
+          "value": 3750,
+          "category": "electricity",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "ガス代",
+          "slug": "gas",
+          "value": 3620,
+          "category": "gas",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "家賃",
+          "slug": "rent",
+          "value": 85000,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "水道代",
+          "slug": "water",
+          "value": 1000,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "管理費",
+          "slug": "administration",
+          "value": 4000,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        }
+      ]
+    },
+    {
+      "month": "202012",
+      "updated_at": "2021-04-02T01:10:43.196Z",
+      "total_value": 98900,
+      "items": [
+        {
+          "title": "電気代",
+          "slug": "electricity",
+          "value": 3200,
+          "category": "electricity",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "ガス代",
+          "slug": "gas",
+          "value": 3500,
+          "category": "gas",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "家賃",
+          "slug": "rent",
+          "value": 85000,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "水道代",
+          "slug": "water",
+          "value": 3200,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        },
+        {
+          "title": "管理費",
+          "slug": "administration",
+          "value": 4000,
+          "category": "misc",
+          "updated_at": "2021-04-02T01:10:43.196Z"
+        }
+      ]
+    }
+  ]
+}

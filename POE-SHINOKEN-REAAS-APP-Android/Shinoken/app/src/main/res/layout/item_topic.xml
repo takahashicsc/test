@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/margin_16">
+
+        <ImageView
+            android:id="@+id/topic_img"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@color/dark_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/topic_title"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/topic_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            tools:text="メディアタイトルメディアタイトルメディアメディアタイトルタイトル"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body2.Black"
+            app:layout_constraintBottom_toTopOf="@+id/topic_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/topic_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <TextView
+            android:id="@+id/topic_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            tools:text="2020.12.23"
+            android:textAppearance="@style/Shinoken.TextAppearance.Caption.DarkGray"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/topic_img"
+            app:layout_constraintTop_toBottomOf="@+id/topic_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

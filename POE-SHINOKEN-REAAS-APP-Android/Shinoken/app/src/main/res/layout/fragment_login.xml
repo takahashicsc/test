@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.login.LoginFragment">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/sign_in_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintBottom_toTopOf="@+id/input_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/app_register_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_layout"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:hint="@string/email"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_layout"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:hint="@string/password"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_in_button"
+            style="@style/Theme.Shinoken.PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_4"
+            android:text="@string/login"
+            app:layout_constraintBottom_toTopOf="@+id/app_register_layout"
+            app:layout_constraintEnd_toEndOf="@id/input_layout"
+            app:layout_constraintStart_toStartOf="@+id/input_layout"
+            app:layout_constraintTop_toBottomOf="@+id/input_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/app_register_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/under_lines_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_text"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body1.Black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_up_button"
+            style="@style/Theme.Shinoken.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/sign_up_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/under_lines_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_register_layout">
+
+        <jp.co.shinoken.ui.widget.UnderLineTextView
+            android:id="@+id/show_password_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:underLineText="@string/password_reset_title" />
+
+        <jp.co.shinoken.ui.widget.UnderLineTextView
+            android:id="@+id/show_sign_in_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_32"
+            app:underLineText="@string/sign_in_support_text" />
+
+        <jp.co.shinoken.ui.widget.UnderLineTextView
+            android:id="@+id/show_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_32"
+            app:underLineText="@string/terms_title" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

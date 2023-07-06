@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1094414762018",
+    "project_id": "shinoken-staging",
+    "storage_bucket": "shinoken-staging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094414762018:android:14d0e14e7b3d7cf16d8a7b",
+        "android_client_info": {
+          "package_name": "com.shinoken.conceirge.user.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094414762018-si7pqaajif3auo0h63sfku37tp2gj7b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe_4J9SE3_2JO3itB3_dplmPEF3AnDuvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094414762018-si7pqaajif3auo0h63sfku37tp2gj7b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

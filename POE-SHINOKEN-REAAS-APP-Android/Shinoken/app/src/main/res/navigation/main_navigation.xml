@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/walkThroughFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="jp.co.shinoken.ui.fragment.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_topicsFragment"
+            app:destination="@id/topicsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chargesFragment"
+            app:destination="@id/chargesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationsFragment"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_manualFragment"
+            app:destination="@id/manualFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_accountSwitchFragment"
+            app:destination="@id/accountSwitchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_faqFragment"
+            app:destination="@id/faqFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_faqDetailFragment"
+            app:destination="@id/faqDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_couponsFragment"
+            app:destination="@id/couponsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_reminderFragment"
+            app:destination="@id/reminderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+
+        <deepLink
+            android:id="@+id/home_deeplink"
+            app:uri="shinoken-residentapp://deeplink/home" />
+
+        <argument
+            android:name="is_reload"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="jp.co.shinoken.ui.fragment.setting.SettingFragment"
+        android:label="@string/setting_title"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/action_settingFragment_to_passwordChangeFragment"
+            app:destination="@id/passwordChangeFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <deepLink
+            android:id="@+id/setting_deeplink"
+            app:uri="shinoken-residentapp://deeplink/setting" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/topicsFragment"
+        android:name="jp.co.shinoken.ui.fragment.topic.TopicsFragment"
+        android:label="@string/topics_title"
+        tools:layout="@layout/fragment_topics">
+        <deepLink
+            android:id="@+id/media_deeplink"
+            app:uri="shinoken-residentapp://deeplink/media" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/walkThroughFragment"
+        android:name="jp.co.shinoken.ui.fragment.walk_through.WalkThroughFragment"
+        tools:layout="@layout/fragment_walk_through">
+        <action
+            android:id="@+id/action_walkThroughFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="jp.co.shinoken.ui.fragment.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_passwordResetFragment"
+            app:destination="@id/passwordResetFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signInSupportFragment"
+            app:destination="@id/signInSupportFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chargesFragment"
+        android:name="jp.co.shinoken.ui.fragment.charges.ChargesFragment"
+        android:label="@string/charges_title"
+        tools:layout="@layout/fragment_charges">
+        <action
+            android:id="@+id/action_chargesFragment_to_chargeDetailFragment"
+            app:destination="@id/chargeDetailFragment" />
+
+        <deepLink
+            android:id="@+id/bill_deeplink"
+            app:uri="shinoken-residentapp://deeplink/bill" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordResetFragment"
+        android:name="jp.co.shinoken.ui.fragment.password_reset.PasswordResetFragment"
+        android:label="@string/password_reset_title"
+        tools:layout="@layout/fragment_password_reset">
+        <action
+            android:id="@+id/action_passwordResetFragment_to_passwordResetInputFormFragment"
+            app:destination="@id/passwordResetInputFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInSupportFragment"
+        android:name="jp.co.shinoken.ui.fragment.sign_in_support.SignInSupportFragment"
+        android:label="@string/sign_in_support_title"
+        tools:layout="@layout/fragment_sign_in_support">
+        <action
+            android:id="@+id/action_signInSupportFragment_to_signInSupportMailFormFragment"
+            app:destination="@id/signInSupportMailFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInSupportMailFormFragment"
+        android:name="jp.co.shinoken.ui.fragment.sign_in_support.SignInSupportMailFormFragment"
+        android:label="@string/sign_in_support_mail_form_title"
+        tools:layout="@layout/fragment_sign_in_support_mail_form" />
+
+    <fragment
+        android:id="@+id/passwordChangeFragment"
+        android:name="jp.co.shinoken.ui.fragment.password_change.PasswordChangeFragment"
+        android:label="@string/password_change_title"
+        tools:layout="@layout/fragment_password_change">
+
+        <deepLink
+            android:id="@+id/password_change_deeplink"
+            app:uri="shinoken-residentapp://deeplink/password_change" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordResetInputFormFragment"
+        android:name="jp.co.shinoken.ui.fragment.password_reset.PasswordResetInputFormFragment"
+        android:label="@string/password_change_title"
+        tools:layout="@layout/fragment_password_reset_input_form">
+        <action
+            android:id="@+id/action_passwordResetInputFormFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="jp.co.shinoken.ui.fragment.account.AccountFragment"
+        android:label="@string/account_title"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_accountFragment_to_accountDetailFragment"
+            app:destination="@id/accountDetailFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_checkFormFragment"
+            app:destination="@id/checkFormFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_cohabitantsFragment"
+            app:destination="@id/cohabitantsFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_lifelineContactsFragment"
+            app:destination="@id/lifelineContactsFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_insuranceFragment"
+            app:destination="@id/insuranceFragment" />
+
+        <deepLink
+            android:id="@+id/procedure_deeplink"
+            app:uri="shinoken-residentapp://deeplink/procedure" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="jp.co.shinoken.ui.fragment.notification.NotificationsFragment"
+        android:label="@string/notifications_title"
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_notificationsFragment_to_notificationDetailFragment"
+            app:destination="@id/notificationDetailFragment" />
+        <action
+            android:id="@+id/action_notificationsFragment_to_boardDetailFragment"
+            app:destination="@id/boardDetailFragment" />
+
+        <deepLink
+            android:id="@+id/notice_deeplink"
+            app:uri="shinoken-residentapp://deeplink/notice" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manualFragment"
+        android:name="jp.co.shinoken.ui.fragment.manual.ManualFragment"
+        android:label="@string/manual_title"
+        tools:layout="@layout/fragment_manual">
+
+        <deepLink
+            android:id="@+id/manual_deeplink"
+            app:uri="shinoken-residentapp://deeplink/manual" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="jp.co.shinoken.ui.fragment.contact.ContactFragment"
+        android:label="@string/contact_title"
+        tools:layout="@layout/fragment_contact">
+        <action
+            android:id="@+id/action_contactFragment_to_faqFragment"
+            app:destination="@id/faqFragment" />
+
+        <action
+            android:id="@+id/action_contactFragment_to_faqDetailFragment"
+            app:destination="@id/faqDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountSwitchFragment"
+        android:name="jp.co.shinoken.ui.fragment.account_switch.AccountSwitchFragment"
+        android:label="@string/account_switch_title"
+        tools:layout="@layout/fragment_account_switch">
+        <action
+            android:id="@+id/action_accountSwitchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountDetailFragment"
+        android:name="jp.co.shinoken.ui.fragment.account_detail.AccountDetailFragment"
+        android:label="@string/account_detail_title"
+        tools:layout="@layout/fragment_account_detail">
+        <action
+            android:id="@+id/action_accountDetailFragment_to_contractUpdateFragment"
+            app:destination="@id/contractUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contractUpdateFragment"
+        android:name="jp.co.shinoken.ui.fragment.contract_update.ContractUpdateFragment"
+        android:label="@string/account_detail_contract_update_title"
+        tools:layout="@layout/fragment_contract_update" />
+    <fragment
+        android:id="@+id/cohabitantRegisterFragment"
+        android:name="jp.co.shinoken.ui.fragment.cohabitant.CohabitantRegisterFragment"
+        android:label="@string/cohabitant_register_title"
+        tools:layout="@layout/fragment_cohabitant_register">
+        <action
+            android:id="@+id/action_cohabitantRegisterFragment_to_cohabitantsFragment"
+            app:destination="@id/cohabitantsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkFormFragment"
+        android:name="jp.co.shinoken.ui.fragment.check_form.CheckFormFragment"
+        android:label="@string/account_check_form_title"
+        tools:layout="@layout/fragment_check_form">
+
+        <deepLink
+            android:id="@+id/check_form_deeplink"
+            app:uri="shinoken-residentapp://deeplink/check_form" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="jp.co.shinoken.ui.fragment.faq.FaqsFragment"
+        android:label="@string/faq_title"
+        tools:layout="@layout/fragment_faqs">
+        <action
+            android:id="@+id/action_faqFragment_to_faqDetailFragment"
+            app:destination="@id/faqDetailFragment" />
+
+        <deepLink
+            android:id="@+id/faq_deeplink"
+            app:uri="shinoken-residentapp://deeplink/faq" />
+
+        <argument
+            android:name="category_name"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqDetailFragment"
+        android:name="jp.co.shinoken.ui.fragment.faq.FaqDetailFragment"
+        android:label="@string/faq_title"
+        tools:layout="@layout/fragment_faq_detail">
+        <argument
+            android:name="faq_id"
+            app:argType="integer" />
+
+        <deepLink app:uri="shinoken-residentapp://deeplink/faq/{faq_id}" />
+    </fragment>
+    <fragment
+        android:id="@+id/couponsFragment"
+        android:name="jp.co.shinoken.ui.fragment.coupons.CouponsFragment"
+        android:label="@string/coupon_title"
+        tools:layout="@layout/fragment_coupons">
+        <deepLink
+            android:id="@+id/benefit_deeplink"
+            app:uri="shinoken-residentapp://deeplink/benefit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationDetailFragment"
+        android:name="jp.co.shinoken.ui.fragment.notification.detail.NotificationDetailFragment"
+        android:label="@string/notifications_title"
+        tools:layout="@layout/fragment_notification_detail">
+        <argument
+            android:name="notification_id"
+            app:argType="integer" />
+
+        <deepLink
+            android:id="@+id/notifications_detail_deeplink"
+            app:uri="shinoken-residentapp://deeplink/notifications/{notification_id}" />
+    </fragment>
+    <fragment
+        android:id="@+id/cohabitantsFragment"
+        android:name="jp.co.shinoken.ui.fragment.cohabitant.CohabitantsFragment"
+        android:label="@string/cohabitant_title"
+        tools:layout="@layout/fragment_cohabitants">
+        <action
+            android:id="@+id/action_cohabitantsFragment_to_cohabitantFragment"
+            app:destination="@id/cohabitantRegisterFragment" />
+        <action
+            android:id="@+id/action_cohabitantsFragment_to_cohabitantDetailFragment"
+            app:destination="@id/cohabitantDetailFragment" />
+
+        <deepLink
+            android:id="@+id/roommate_requests_deeplink"
+            app:uri="shinoken-residentapp://deeplink/roommate_requests" />
+    </fragment>
+    <fragment
+        android:id="@+id/cohabitantDetailFragment"
+        android:name="jp.co.shinoken.ui.fragment.cohabitant.CohabitantDetailFragment"
+        android:label="@string/cohabitant_title">
+
+        <argument
+            android:name="cohabitant"
+            app:argType="jp.co.shinoken.model.Cohabitant" />
+
+        <argument
+            android:name="resideType"
+            app:argType="jp.co.shinoken.model.ResideType" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="jp.co.shinoken.ui.fragment.sign_up.SignUpFragment"
+        android:label="@string/sign_up_title"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_signUpCodeFormFragment"
+            app:destination="@id/signUpCodeFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpCodeFormFragment"
+        android:name="jp.co.shinoken.ui.fragment.sign_up.SignUpCodeFormFragment"
+        android:label="@string/sign_up_code_form_title"
+        tools:layout="@layout/fragment_sign_up_code_form">
+        <action
+            android:id="@+id/action_signUpCodeFormFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <argument
+            android:name="userName"
+            app:argType="string" />
+
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_signUpCodeFormFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="jp.co.shinoken.ui.fragment.reminder.ReminderFragment"
+        android:label="@string/garbages_title"
+        tools:layout="@layout/fragment_reminder">
+        <action
+            android:id="@+id/action_reminderFragment_to_garbageDetailFragment"
+            app:destination="@id/garbageDetailFragment" />
+
+        <deepLink
+            android:id="@+id/trash_calendar_deeplink"
+            app:uri="shinoken-residentapp://deeplink/trash_calendar" />
+    </fragment>
+    <fragment
+        android:id="@+id/lifelineContactsFragment"
+        android:name="jp.co.shinoken.ui.fragment.lifeline_contact.LifelineContactsFragment"
+        android:label="@string/life_line_contacts_title"
+        tools:layout="@layout/fragment_lifeline_contacts">
+
+        <deepLink
+            android:id="@+id/lifelines_deeplink"
+            app:uri="shinoken-residentapp://deeplink/lifelines" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="jp.co.shinoken.ui.fragment.search.SearchFragment"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/insuranceFragment"
+        android:name="jp.co.shinoken.ui.fragment.insurance.InsuranceFragment"
+        android:label="@string/insurance_title"
+        tools:layout="@layout/fragment_insurance" />
+    <fragment
+        android:id="@+id/chargeDetailFragment"
+        android:name="jp.co.shinoken.ui.fragment.charges.ChargeDetailFragment"
+        android:label="@string/house_rent"
+        tools:layout="@layout/fragment_charge_detail">
+
+        <argument
+            android:name="charge_month"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/garbageDetailFragment"
+        android:name="jp.co.shinoken.ui.fragment.reminder.GarbageDetailFragment"
+        android:label="@string/garbages_title"
+        tools:layout="@layout/fragment_garbage_detail">
+        <action
+            android:id="@+id/action_garbageDetailFragment_to_collectionDateTypeFormFragment"
+            app:destination="@id/collectionDateTypeFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionDateTypeFormFragment"
+        android:name="jp.co.shinoken.ui.fragment.reminder.CollectionDateTypeFormFragment"
+        android:label="@string/garbages_title"
+        tools:layout="@layout/fragment_collection_date_type_form">
+        <action
+            android:id="@+id/action_collectionDateTypeFormFragment_to_selectWeekFragment"
+            app:destination="@id/selectWeekFragment" />
+        <action
+            android:id="@+id/action_collectionDateTypeFormFragment_to_selectDayOfWeekFragment"
+            app:destination="@id/selectDayOfWeekFragment" />
+        <action
+            android:id="@+id/action_collectionDateTypeFormFragment_to_selectDayOfMonthFragment"
+            app:destination="@id/selectDayOfMonthFragment" />
+        <action
+            android:id="@+id/action_collectionDateTypeFormFragment_to_selectDayFragment"
+            app:destination="@id/selectDayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectWeekFragment"
+        android:name="jp.co.shinoken.ui.fragment.reminder.SelectWeekFragment"
+        android:label="@string/garbages_title"
+        tools:layout="@layout/fragment_select_week">
+        <action
+            android:id="@+id/action_selectWeekFragment_to_selectDayOfWeekFragment"
+            app:destination="@id/selectDayOfWeekFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectDayOfWeekFragment"
+        android:name="jp.co.shinoken.ui.fragment.reminder.SelectDayOfWeekFragment"
+        android:label="@string/garbages_title"
+        tools:layout="@layout/fragment_select_day_of_week" />
+    <fragment
+        android:id="@+id/selectDayOfMonthFragment"
+        android:name="jp.co.shinoken.ui.fragment.reminder.SelectDayOfMonthFragment"
+        android:label="@string/garbages_title"
+        tools:layout="@layout/fragment_select_day_of_month" />
+    <fragment
+        android:id="@+id/selectDayFragment"
+        android:name="jp.co.shinoken.ui.fragment.reminder.SelectDayFragment"
+        android:label="@string/garbages_title"
+        tools:layout="@layout/fragment_select_day" />
+    <fragment
+        android:id="@+id/boardDetailFragment"
+        android:name="jp.co.shinoken.ui.fragment.notification.detail.BoardDetailFragment"
+        android:label="@string/notifications_title"
+        tools:layout="@layout/fragment_notification_detail">
+
+        <argument
+            android:name="board_id"
+            app:argType="integer" />
+
+        <deepLink
+            android:id="@+id/borad_detail_deeplink"
+            app:uri="shinoken-residentapp://deeplink/borads/{board_id}" />
+
+    </fragment>
+
+</navigation>

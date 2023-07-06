@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.sign_in_support.SignInSupportMailFormFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_support_mail_form_name_layout"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:hint="@string/full_name"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_in_support_mail_form_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_support_mail_form_name_kana_layout"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:hint="@string/name_kana"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_in_support_mail_form_name_kana_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_support_mail_form_contract_phone_number_layout"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:hint="@string/contract_phone_number"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_in_support_mail_form_contract_phone_number_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_support_mail_form_contract_mail_layout"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:hint="@string/contract_mail"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_in_support_mail_form_contract_mail_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_support_mail_form_content_layout"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:hint="@string/inquiry_content"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_in_support_mail_form_content_edit"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_in_support_mail_form_send_button"
+            style="@style/Theme.Shinoken.PrimaryButton.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/send" />
+    </LinearLayout>
+</ScrollView>

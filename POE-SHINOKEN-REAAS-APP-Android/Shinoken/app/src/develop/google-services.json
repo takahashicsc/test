@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "633204493843",
+    "project_id": "poe-shinoken-reaas-dev",
+    "storage_bucket": "poe-shinoken-reaas-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633204493843:android:edbea30b0b9e5baa7a79e6",
+        "android_client_info": {
+          "package_name": "jp.co.shinoken"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633204493843-o2hk5kmcotvveubhh83kpgu8q0hav67i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMCbM4U00jUjIZZ1b5Eor6DUfQoyCujRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633204493843-o2hk5kmcotvveubhh83kpgu8q0hav67i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

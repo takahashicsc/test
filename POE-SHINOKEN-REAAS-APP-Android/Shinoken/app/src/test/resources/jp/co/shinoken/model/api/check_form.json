@@ -1,0 +1,155 @@
+{
+  "submittable": false,
+  "deadline": "2021-05-02T01:12:31.240Z",
+  "categories": [
+    {
+      "slug": "opening",
+      "title": "玄関・廊下"
+    },
+    {
+      "slug": "kitchen-kitchen",
+      "title": "キッチン"
+    },
+    {
+      "slug": "washing",
+      "title": "脱衣"
+    }
+  ],
+  "data": [
+    {
+      "slug": "opening-door",
+      "category": "opening",
+      "title": "玄関ドア",
+      "checks": [
+        {
+          "point": "クローザーの速度・施錠の作動・U字ロック・開閉ガタツキ",
+          "by": "目視・動作"
+        },
+        {
+          "point": "ドア本体及び枠のよごれ・傷、郵便受け設置状態",
+          "by": "目視"
+        }
+      ],
+      "result": "ok",
+      "description": null,
+      "images": []
+    },
+    {
+      "slug": "opening-intercom",
+      "category": "opening",
+      "title": "インターホン",
+      "checks": [
+        {
+          "point": "インターホン押、チャイム作動確認",
+          "by": "動作"
+        }
+      ],
+      "result": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "slug": "opening-shoesbox",
+      "category": "opening",
+      "title": "シューズボックス",
+      "checks": [
+        {
+          "point": "扉の建付・開閉・戸当たり・よごれ・傷・棚板・ダボのモレがないか",
+          "by": "目視・動作"
+        }
+      ],
+      "result": "ok",
+      "description": null,
+      "images": []
+    },
+    {
+      "slug": "opening-light",
+      "category": "opening",
+      "title": "照明",
+      "checks": [
+        {
+          "point": "点灯状態・動作",
+          "by": "目視・動作"
+        }
+      ],
+      "result": "ng",
+      "description": "ちょうつがいが錆びてる",
+      "images": []
+    },
+    {
+      "slug": "opening-wall_and_ceil",
+      "category": "opening",
+      "title": "壁・天井クロス",
+      "checks": [
+        {
+          "point": "すき間・よごれ・傷",
+          "by": "目視"
+        }
+      ],
+      "result": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "slug": "kitchen-kitchen",
+      "category": "kitchen",
+      "title": "キッチン",
+      "checks": [
+        {
+          "point": "扉の建付及び開閉・コーキング切れ",
+          "by": "目視・動作"
+        },
+        {
+          "point": "吊戸扉と照明との干渉の有無",
+          "by": "目視・動作"
+        },
+        {
+          "point": "水栓のぐらつきがないか・水栓、排水部の漏水",
+          "by": "目視・動作"
+        },
+        {
+          "point": "ガスコンロのよごれ・傷",
+          "by": "目視"
+        },
+        {
+          "point": "照明・換気扇の動作、隙間（10mm以内）異常音",
+          "by": "目視・動作"
+        },
+        {
+          "point": "冷蔵庫スペースの確認",
+          "by": "目視"
+        }
+      ],
+      "result": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "slug": "kitchen-gas_stove",
+      "category": "kitchen",
+      "title": "ガスコンロ",
+      "checks": [],
+      "result": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "slug": "washing-stand",
+      "category": "washing",
+      "title": "洗面",
+      "checks": [],
+      "result": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "slug": "washing-door",
+      "category": "washing",
+      "title": "室内ドア",
+      "checks": [],
+      "result": null,
+      "description": null,
+      "images": []
+    }
+  ]
+}

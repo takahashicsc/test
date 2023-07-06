@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Shinoken.TextAppearance.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/text_24</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/text_20</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/text_12</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption2" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/text_12</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+
+    <!-- color black -->
+    <style name="Shinoken.TextAppearance.Headline.Black" parent="Shinoken.TextAppearance.Headline">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Title.Black" parent="Shinoken.TextAppearance.Title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Subtitle.Black" parent="Shinoken.TextAppearance.Subtitle">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body1.Black" parent="Shinoken.TextAppearance.Body1">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body2.Black" parent="Shinoken.TextAppearance.Body2">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption.Black" parent="Shinoken.TextAppearance.Caption">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption2.Black" parent="Shinoken.TextAppearance.Caption2">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Button.Black" parent="Shinoken.TextAppearance.Button">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- color light_gray -->
+    <style name="Shinoken.TextAppearance.Headline.DarkGray" parent="Shinoken.TextAppearance.Headline">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Title.DarkGray" parent="Shinoken.TextAppearance.Title">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Subtitle.DarkGray" parent="Shinoken.TextAppearance.Subtitle">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body1.DarkGray" parent="Shinoken.TextAppearance.Body1">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body2.DarkGray" parent="Shinoken.TextAppearance.Body2">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption.DarkGray" parent="Shinoken.TextAppearance.Caption">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption2.DarkGray" parent="Shinoken.TextAppearance.Caption2">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Button.DarkGray" parent="Shinoken.TextAppearance.Button">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <!-- color dark_blue -->
+    <style name="Shinoken.TextAppearance.Headline.DarkBlue" parent="Shinoken.TextAppearance.Headline">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Title.DarkBlue" parent="Shinoken.TextAppearance.Title">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Subtitle.DarkBlue" parent="Shinoken.TextAppearance.Subtitle">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body1.DarkBlue" parent="Shinoken.TextAppearance.Body1">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body2.DarkBlue" parent="Shinoken.TextAppearance.Body2">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption.DarkBlue" parent="Shinoken.TextAppearance.Caption">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption2.DarkBlue" parent="Shinoken.TextAppearance.Caption2">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Button.DarkBlue" parent="Shinoken.TextAppearance.Button">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+
+    <!-- color white -->
+    <style name="Shinoken.TextAppearance.Headline.White" parent="Shinoken.TextAppearance.Headline">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Title.White" parent="Shinoken.TextAppearance.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Subtitle.White" parent="Shinoken.TextAppearance.Subtitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body1.White" parent="Shinoken.TextAppearance.Body1">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Body2.White" parent="Shinoken.TextAppearance.Body2">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption.White" parent="Shinoken.TextAppearance.Caption">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Caption2.White" parent="Shinoken.TextAppearance.Caption2">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Shinoken.TextAppearance.Button.White" parent="Shinoken.TextAppearance.Button">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

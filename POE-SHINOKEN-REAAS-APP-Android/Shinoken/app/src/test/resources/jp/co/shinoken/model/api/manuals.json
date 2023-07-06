@@ -1,0 +1,73 @@
+{
+  "total": 4,
+  "data": [
+    {
+      "id": 30,
+      "title": "マニュアルman5dd0c25a",
+      "slug": "man5dd0c25a",
+      "start_at": "2021-03-22T13:42:23.000Z",
+      "end_at": "2031-03-22T13:42:23.000Z",
+      "content_text": null,
+      "images": [],
+      "labels": [],
+      "links": [],
+      "asset": {
+        "key": "assetsman5dd0c25a",
+        "content_type": "application/pdf",
+        "publish_url": "https://s3-ap-northeast-1.amazonaws.com/shinoken-demo.reivo.info/public/shared/assetsman5dd0c25a",
+        "variant_urls": {}
+      }
+    },
+    {
+      "id": 31,
+      "title": "マニュアルman4f80cdd9",
+      "slug": "man4f80cdd9",
+      "start_at": "2021-03-22T13:42:23.000Z",
+      "end_at": "2031-03-22T13:42:23.000Z",
+      "content_text": null,
+      "images": [],
+      "labels": [],
+      "links": [],
+      "asset": {
+        "key": "assetsman4f80cdd9",
+        "content_type": "application/pdf",
+        "publish_url": "https://s3-ap-northeast-1.amazonaws.com/shinoken-demo.reivo.info/public/shared/assetsman4f80cdd9",
+        "variant_urls": {}
+      }
+    },
+    {
+      "id": 26,
+      "title": "マニュアルman84f985aa",
+      "slug": "man84f985aa",
+      "start_at": "2021-03-22T13:42:22.000Z",
+      "end_at": "2031-03-22T13:42:22.000Z",
+      "content_text": null,
+      "images": [],
+      "labels": [],
+      "links": [],
+      "asset": {
+        "key": "assetsman84f985aa",
+        "content_type": "application/pdf",
+        "publish_url": "https://s3-ap-northeast-1.amazonaws.com/shinoken-demo.reivo.info/public/shared/assetsman84f985aa",
+        "variant_urls": {}
+      }
+    },
+    {
+      "id": 27,
+      "title": "マニュアルman4ac469b7",
+      "slug": "man4ac469b7",
+      "start_at": "2021-03-22T13:42:22.000Z",
+      "end_at": "2031-03-22T13:42:22.000Z",
+      "content_text": null,
+      "images": [],
+      "labels": [],
+      "links": [],
+      "asset": {
+        "key": "assetsman4ac469b7",
+        "content_type": "application/pdf",
+        "publish_url": "https://s3-ap-northeast-1.amazonaws.com/shinoken-demo.reivo.info/public/shared/assetsman4ac469b7",
+        "variant_urls": {}
+      }
+    }
+  ]
+}

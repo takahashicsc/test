@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/check_form_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Body2.Black"
+                    tools:text="玄関ドア" />
+
+                <ImageView
+                    android:id="@+id/check_form_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_help"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/check_form_unchecked"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:background="@drawable/ic_checkbox_unchecked"
+                android:button="@null" />
+
+            <CheckBox
+                android:id="@+id/check_form_checked"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_checkbox_checked"
+                android:button="@null" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_divider" />
+
+        <LinearLayout
+            android:id="@+id/unchecked_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/check_form_description_layout"
+                style="@style/Shinoken.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:hint="@string/check_form_unchecked_description"
+                app:errorEnabled="false"
+                app:helperTextEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/checkFormDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Caption" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_photo_list" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

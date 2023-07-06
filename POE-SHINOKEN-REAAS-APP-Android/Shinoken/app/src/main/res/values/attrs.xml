@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EmptyView">
+        <attr name="emptyText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="UnderLineTextView">
+        <attr name="underLineText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LinkItemView">
+        <attr name="linkItemText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RadioItemView">
+        <attr name="radioItemText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LinkDescriptionItemView">
+        <attr name="linkText" format="string" />
+        <attr name="linkDescriptionText" format="string" />
+        <attr name="linkIcon" format="integer" />
+    </declare-styleable>
+</resources>

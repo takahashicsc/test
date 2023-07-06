@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/link_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:padding="@dimen/margin_16">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/link_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+            tools:text="ここにテキストが入ります" />
+
+        <TextView
+            android:id="@+id/link_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:textAppearance="@style/Shinoken.TextAppearance.Caption.DarkGray"
+            tools:text="ここにテキストが入ります" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/link_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_link_arrow"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Shinoken" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">@color/dark_blue</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="toolbarStyle">@style/Shinoken.Toolbar</item>
+
+        <!-- TextAppearance -->
+        <item name="textAppearanceHeadline5">@style/Shinoken.TextAppearance.Headline</item>
+        <item name="textAppearanceHeadline6">@style/Shinoken.TextAppearance.Title</item>
+        <item name="textAppearanceSubtitle1">@style/Shinoken.TextAppearance.Subtitle</item>
+        <item name="textAppearanceBody1">@style/Shinoken.TextAppearance.Body1</item>
+        <item name="textAppearanceBody2">@style/Shinoken.TextAppearance.Body2</item>
+        <item name="textAppearanceCaption">@style/Shinoken.TextAppearance.Caption</item>
+        <item name="textAppearanceButton">@style/Shinoken.TextAppearance.Button</item>
+    </style>
+
+    <style name="Shinoken.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Theme.Shinoken.Launcher" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_screen_launch</item>
+    </style>
+
+    <style name="Theme.Shinoken.PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/primary_button_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">7dp</item>
+    </style>
+
+    <style name="Theme.Shinoken.PrimaryButton.Small" parent="Theme.Shinoken.PrimaryButton">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+
+    <style name="Theme.Shinoken.SecondaryButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/dark_blue</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <style name="Theme.Shinoken.DeleteButton" parent="Theme.Shinoken.PrimaryButton">
+        <item name="android:backgroundTint">@color/delete_button_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">7dp</item>
+    </style>
+
+    <style name="Shinoken.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_layout_stroke_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="hintTextColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Shinoken.TextInputLayout.OutlinedBox.ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/text_input_layout_stroke_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="hintTextColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Theme.PdfView.SelectedTheme" parent="@style/Theme.PdfView.Dark">
+        <item name="pdfView_actionBarTint">@color/white</item>
+        <item name="pdfView_downloadIconTint">@color/black</item>
+        <item name="pdfView_titleTextStyle">@style/Shinoken.PdfView.SelectedTheme.TextAppearance
+        </item>
+    </style>
+
+    <style name="Shinoken.PdfView.SelectedTheme.TextAppearance" parent="@style/pdfView_titleTextAppearance">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Shinoken.CheckBoxStyle" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textAppearance">@style/Shinoken.TextAppearance.Body1.DarkBlue</item>
+        <item name="colorControlNormal">@color/dark_blue</item>
+        <item name="colorControlActivated">@color/dark_blue</item>
+    </style>
+</resources>

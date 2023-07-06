@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/warning_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+        android:textStyle="bold"
+        tools:text="タイトル" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/warning_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body1"
+            android:textColor="#707070"
+            tools:text="メッセージです。メッセージです。メッセージです。メッセージです。メッセージです。メッセージです。メッセージです。メッセージです。" />
+
+        <jp.co.shinoken.ui.widget.UnderLineTextView
+            android:id="@+id/warning_under_line_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_56"
+            tools:underLineText="プライバシーポリシー" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/warning_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_56"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_divider" />
+
+        <TextView
+            android:id="@+id/warning_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/margin_16"
+            android:paddingBottom="@dimen/margin_16"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue"
+            tools:text="OK" />
+    </LinearLayout>
+</LinearLayout>

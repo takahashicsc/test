@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:gravity="center"
+            android:text="@string/sign_up_error_headline"
+            android:textAppearance="@style/Shinoken.TextAppearance.Headline.Black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/sign_up_error_subtitle"
+            android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/sign_up_error_text1"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/sign_up_error_description1"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body1.Black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:text="@string/sign_up_error_text2"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/sign_up_error_description2"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body1.Black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:text="@string/sign_up_error_text3"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/sign_up_error_description3"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body1.Black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_48"
+            android:background="@color/background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_error_contact_head"
+                android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/sign_up_error_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/sign_up_error_contact_phone_number"
+                android:textAppearance="@style/Shinoken.TextAppearance.Headline.DarkBlue"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:text="@string/sign_up_error_contact_description"
+                android:textAppearance="@style/Shinoken.TextAppearance.Body1.DarkGray" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sign_up_error_email"
+                style="@style/Theme.Shinoken.PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:text="@string/sign_up_error_contact_email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:text="@string/sign_up_error_contact_time"
+                android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue" />
+        </LinearLayout>
+
+        <jp.co.shinoken.ui.widget.UnderLineTextView
+            android:id="@+id/sign_up_error_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_24"
+            app:underLineText="@string/close" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.reminder.GarbageDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/garbage_detail_setting_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:text="@string/garbage_detail_setting_text"
+            android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue"
+            app:layout_constraintBottom_toTopOf="@+id/notification_date_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/notification_date_type"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:hint="@string/garbage_detail_notification_date_type"
+            app:layout_constraintBottom_toTopOf="@+id/notification_garbage_type"
+            app:layout_constraintEnd_toStartOf="@+id/notification_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garbage_detail_setting_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/notification_date"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:hint="@string/garbage_detail_notification_date"
+            app:layout_constraintBottom_toBottomOf="@+id/notification_date_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/notification_date_type"
+            app:layout_constraintTop_toTopOf="@+id/notification_date_type">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="datetime" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/notification_garbage_type"
+            style="@style/Shinoken.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:hint="@string/confirm_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notification_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/divider1"
+            layout="@layout/view_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintBottom_toTopOf="@+id/garbage_select_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notification_garbage_type" />
+
+        <jp.co.shinoken.ui.widget.LinkItemView
+            android:id="@+id/garbage_select_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/divider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider1"
+            app:linkItemText="@string/garbage_detail_notification_type" />
+
+        <include
+            android:id="@+id/divider2"
+            layout="@layout/view_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/create_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garbage_select_type" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create_button"
+            style="@style/Theme.Shinoken.PrimaryButton.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

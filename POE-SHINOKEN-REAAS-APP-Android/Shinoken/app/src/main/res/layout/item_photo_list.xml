@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginEnd="@dimen/margin_8">
+
+    <ImageView
+        android:id="@+id/photo_item_plus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_photo_item"
+        android:scaleType="center"
+        android:src="@drawable/ic_plus"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/photo_item"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        tools:src="@drawable/img_profile_no" />
+
+    <ImageView
+        android:id="@+id/photo_remove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end|top"
+        android:src="@drawable/ic_baseline_remove_circle"
+        android:visibility="gone" />
+</FrameLayout>

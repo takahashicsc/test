@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597732021339",
+    "project_id": "shinoken-production",
+    "storage_bucket": "shinoken-production.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597732021339:android:423bc3af807746ceb31b7e",
+        "android_client_info": {
+          "package_name": "com.shinoken.conceirge.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597732021339-omjcakpem3de09f2t1ijca16unmgg850.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC62xUv4fpy2yd_VgffMHwpZRN-vaclLYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597732021339-omjcakpem3de09f2t1ijca16unmgg850.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

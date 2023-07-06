@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/check_point_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+        android:textStyle="bold"
+        tools:text="タイトル" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:paddingStart="@dimen/margin_16"
+            android:paddingTop="@dimen/margin_16"
+            android:paddingEnd="@dimen/margin_16"
+            android:text="@string/check_form_point_dialog_text"
+            android:textAppearance="@style/Shinoken.TextAppearance.Caption.DarkBlue" />
+
+        <include layout="@layout/view_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/check_point_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_16">
+
+        <TextView
+            android:id="@+id/check_point"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_weight="1"
+            tools:text="クローザーの速度・施錠の作動・U字ロック・開閉ガタツキ" />
+
+        <ImageView
+            android:id="@+id/check_point_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_8"
+            android:src="@drawable/ic_arrow_down"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <include layout="@layout/view_divider" />
+
+    <LinearLayout
+        android:id="@+id/check_by_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/check_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:paddingStart="@dimen/margin_32"
+            android:paddingTop="@dimen/margin_16"
+            android:paddingEnd="@dimen/margin_32"
+            android:paddingBottom="@dimen/margin_16"
+            tools:text="ドアの開閉時にゆっくりドアが閉まるか、カギ、U字ロックの噛み合わせが正常か、開閉時にガタつきがないかの確認。" />
+
+        <include layout="@layout/view_divider" />
+    </LinearLayout>
+</LinearLayout>

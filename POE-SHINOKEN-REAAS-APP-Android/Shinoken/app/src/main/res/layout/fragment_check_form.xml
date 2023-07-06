@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.check_form.CheckFormFragment">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/check_form_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/check_form_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:text="@string/check_form_description"
+                android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue" />
+
+
+            <TextView
+                android:id="@+id/check_form_deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_32"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue"
+                tools:text="@string/check_form_deadline_format" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/check_form_send"
+                style="@style/Theme.Shinoken.PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:enabled="false"
+                android:paddingTop="@dimen/margin_4"
+                android:paddingBottom="@dimen/margin_4"
+                android:text="@string/check_form_submit"
+                android:textAppearance="@style/Shinoken.TextAppearance.Subtitle"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_32"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_check_form" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

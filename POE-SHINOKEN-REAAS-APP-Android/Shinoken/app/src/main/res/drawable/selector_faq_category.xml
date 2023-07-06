@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/fg_faq_category_selected" android:state_selected="true" />
+    <item android:drawable="@drawable/fg_faq_category_default" android:state_selected="false" />
+</selector>

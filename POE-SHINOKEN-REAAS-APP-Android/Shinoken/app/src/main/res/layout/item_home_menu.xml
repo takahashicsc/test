@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/margin_8"
+            android:contentDescription="menu_icon"
+            app:layout_constraintBottom_toTopOf="@+id/menu_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_menu_icon1" />
+
+        <ImageView
+            android:id="@+id/badge_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:contentDescription="menu_icon"
+            android:src="@drawable/bg_tab_badge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/menu_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/text_16"
+            android:includeFontPadding="false"
+            android:text="@string/setting_title"
+            android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.DarkBlue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/menu_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_icon" />
+
+        <LinearLayout
+            android:id="@+id/menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_text">
+
+            <TextView
+                android:id="@+id/menu_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:includeFontPadding="false"
+                android:text="@string/setting_title"
+                android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue" />
+
+            <ImageView
+                android:id="@+id/arrow_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:src="@drawable/ic_arrow_right"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

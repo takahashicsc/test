@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.notification.detail.NotificationDetailFragment">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/notification_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/notification_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/notification_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_16">
+
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="共用部の点検があります"
+                android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black" />
+
+            <TextView
+                android:id="@+id/notification_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4"
+                tools:text="2020.10.10"
+                android:textAppearance="@style/Shinoken.TextAppearance.Caption.DarkGray" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/notification_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/margin_16"
+            android:paddingEnd="@dimen/margin_16"
+            tools:text="これは平生もちろんそのお話社といったののところのいたた。けっして一生が吹聴めももしその発達だろうだけにしてならましには関係するでたけれども、当然には這入っないあっでです。口が見だろのは何だか結果をもしまいでな。何だか岡田さんを説明政府始終安心と起るな個人この例外どこか奨励をというお意味あるないつなて、どういう生涯は誰か教授態度に取り消せて、岡田さんの事が不平の私のまあ今講演とさて私飯をご切望をやっように同時にご批評が思っなですので、けっして何だか解釈がしたているありのの考えないだ。しかしそれからご他に含まのもそう自由とするまいて、どんな自分をは聴いんてに対する文学で濁していました。"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body1.Black" />
+
+        <LinearLayout
+            android:id="@+id/notification_link_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_32"
+            android:paddingBottom="@dimen/margin_32">
+
+            <include layout="@layout/view_divider" />
+
+            <jp.co.shinoken.ui.widget.LinkItemView
+                android:id="@+id/notification_link_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:linkItemText="家財保険内容の確認" />
+
+            <include layout="@layout/view_divider" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

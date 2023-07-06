@@ -1,0 +1,53 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/crop_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#AA000000"
+        app:cropBorderCornerColor="@color/white"
+        app:cropBorderCornerOffset="0dp"
+        app:cropBorderCornerThickness="5dp"
+        app:cropBorderLineColor="@android:color/holo_green_light"
+        app:cropBorderLineThickness="1dp"
+        app:cropGuidelines="on"
+        app:cropGuidelinesColor="@android:color/transparent"
+        app:cropInitialCropWindowPaddingRatio="0"
+        app:cropSnapRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/crop_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel_button"
+        style="@style/Theme.Shinoken.SecondaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginStart="@dimen/margin_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/crop_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/margin_16"
+        app:layout_constraintTop_toBottomOf="@+id/crop_image_view" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/crop_button"
+        style="@style/Theme.Shinoken.PrimaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancel_button"
+        app:layout_constraintTop_toBottomOf="@+id/crop_image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

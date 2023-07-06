@@ -1,0 +1,44 @@
+{
+  "data": {
+    "sub": "c836dcc4-5d12-4f98-9824-8edd5d674244",
+    "name": "takuya.ohashi@actbe.co.jp",
+    "detected_accountables": [
+      {
+        "id": 20,
+        "auth_id": "Resident_20",
+        "code": "testa1105",
+        "name": "takuya.ohashiC",
+        "residence_name": "テスト建物1 1105",
+        "contract_start_at": "2019-12-01T00:00:00.000Z",
+        "contract_end_at": "2021-11-30T00:00:00.000Z"
+      },
+      {
+        "id": 20,
+        "auth_id": "Subresident_20",
+        "code": "testa1105",
+        "name": "takuya.ohashi（漢字）",
+        "residence_name": "テスト建物1 1105",
+        "contract_start_at": "2019-12-01T00:00:00.000Z",
+        "contract_end_at": "2021-11-30T00:00:00.000Z"
+      },
+      {
+        "id": 21,
+        "auth_id": "Resident_21",
+        "code": "testa1106",
+        "name": "takuya.ohashiD",
+        "residence_name": "テスト建物1 1106",
+        "contract_start_at": "2019-11-30T00:00:00.000Z",
+        "contract_end_at": "2021-11-29T00:00:00.000Z"
+      },
+      {
+        "id": 21,
+        "auth_id": "Subresident_21",
+        "code": "testa1106",
+        "name": "takuya.ohashi（漢字）",
+        "residence_name": "テスト建物1 1106",
+        "contract_start_at": "2019-11-30T00:00:00.000Z",
+        "contract_end_at": "2021-11-29T00:00:00.000Z"
+      }
+    ]
+  }
+}

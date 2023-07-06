@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.account.AccountFragment">
+
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/account_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_16">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:contentDescription="@string/profile_image"
+                        android:foreground="@drawable/img_profile_no"
+                        android:src="@drawable/ic_profile_icon" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/ic_camera" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/account_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Shinoken.TextAppearance.Headline.Black"
+                        tools:text="@string/account_name_format" />
+
+                    <TextView
+                        android:id="@+id/building_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.DarkGray"
+                        tools:text="@string/account_building_name_format" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:text="@string/account_detail_section_title"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue" />
+
+                <jp.co.shinoken.ui.widget.LinkDescriptionItemView
+                    android:id="@+id/account_contract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:linkDescriptionText="契約更新まであと30日"
+                    app:linkText="@string/account_detail_title" />
+
+                <jp.co.shinoken.ui.widget.LinkDescriptionItemView
+                    android:id="@+id/insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:linkDescriptionText="契約中"
+                    app:linkText="@string/account_insurance_title" />
+
+                <jp.co.shinoken.ui.widget.LinkDescriptionItemView
+                    android:id="@+id/account_cohabitant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:linkText="@string/account_cohabitant_title" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:text="@string/account_procedure_section_title"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue" />
+
+                <jp.co.shinoken.ui.widget.LinkDescriptionItemView
+                    android:id="@+id/check_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:linkDescriptionText="未提出"
+                    app:linkText="@string/account_check_form_link" />
+
+                <jp.co.shinoken.ui.widget.LinkDescriptionItemView
+                    android:id="@+id/life_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:linkText="@string/account_contact_title" />
+
+                <jp.co.shinoken.ui.widget.LinkDescriptionItemView
+                    android:id="@+id/mail_transfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:linkIcon="@drawable/ic_browser_open"
+                    app:linkText="@string/account_mail_transfer_title" />
+
+                <jp.co.shinoken.ui.widget.LinkDescriptionItemView
+                    android:id="@+id/cancel_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:linkIcon="@drawable/ic_browser_open"
+                    app:linkText="@string/account_cancel_form_title" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

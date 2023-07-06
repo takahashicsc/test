@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_8"
+    android:minWidth="160dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/black"
+    app:cardCornerRadius="@dimen/margin_24"
+    app:contentPaddingBottom="@dimen/margin_8"
+    app:contentPaddingLeft="@dimen/margin_8"
+    app:contentPaddingRight="@dimen/margin_24"
+    app:contentPaddingTop="@dimen/margin_8">
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            tools:src="@drawable/ic_help_icon1" />
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_8"
+            android:textAppearance="@style/Shinoken.TextAppearance.Body1.White"
+            android:textStyle="bold"
+            tools:text="ガスが使えない" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,78 @@
+{
+  "data": {
+    "auth_id": "Resident_15",
+    "accountable_type": "Resident",
+    "user_sub": "041fac994a3ddd7a",
+    "name": "坂上田村麻呂e6af23fe",
+    "name_phonetic": "サカノウエノタムラマロe6af23fe",
+    "email": "rv-blackhole+041fac994a3ddd7a@reivo.co.jp",
+    "tel": "000-0000-0000+041fac994a3ddd7a",
+    "building": {
+      "id": 6,
+      "code": "899f53e3",
+      "name": "福岡テスト建物マンション899f53e3",
+      "prefecture_id": 40,
+      "prefecture_name": "福岡県",
+      "address": "812-8577"
+    },
+    "room": {
+      "id": 18,
+      "code": "899f53e3_203",
+      "number": "203"
+    },
+    "icon": {
+      "key": "fccwkz3nhsdkuv2fptv4agd6thd9",
+      "content_type": "image/png",
+      "publish_url": "https://s3-ap-northeast-1.amazonaws.com/shinoken-demo.reivo.info/public/shared/user/icon/fccwkz3nhsdkuv2fptv4agd6thd9",
+      "variant_urls": {}
+    },
+    "contract": {
+      "contract_start_at": "2016-11-01T00:00:00.000Z",
+      "contract_end_at": "2090-10-20T00:00:00.000Z",
+      "cancelled_at": null,
+      "active": true,
+      "roommates_count": 0,
+      "days_to_end_of_contract": 2000,
+      "resident_name": "田中太郎",
+      "resident_name_phonetic": "タナカタロウ",
+      "resident_birthday": "2020-01-01",
+      "resident_tel": null,
+      "residence_name": "テスト物件"
+    },
+    "check_form": {
+      "submittable": false,
+      "submitted_at": null,
+      "status": "draft"
+    },
+    "lifelines": [
+      {
+        "name": "福岡水道局899f53e3支店",
+        "tel": "0120-000-000",
+        "kind": "水道"
+      },
+      {
+        "name": "福岡ガスセンター899f53e3支店",
+        "tel": "0120-000-000",
+        "kind": "ガス"
+      }
+    ],
+    "detected_accountables": [
+      {
+        "id": 15,
+        "auth_id": "Resident_15",
+        "code": "e6af23fe",
+        "name": "坂上田村麻呂e6af23fe",
+        "residence_name": "福岡テスト建物マンション899f53e3 203",
+        "contract_start_at": "2016-11-01T00:00:00.000Z",
+        "contract_end_at": "2090-10-20T00:00:00.000Z"
+      }
+    ],
+    "meta": {
+      "terms_of_service": "https://shinoken.reivo.info/pages/terms-of-service",
+      "privacy_policy": "https://shinoken.reivo.info/pages/privacy-policy",
+      "mail_transfer": "https://www.post.japanpost.jp/service/tenkyo/index.html",
+      "cancel_request": ""
+    },
+    "members_count": 1
+  }
+}

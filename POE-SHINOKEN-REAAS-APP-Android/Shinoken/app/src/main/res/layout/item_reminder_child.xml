@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/garbage_child_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/margin_16">
+
+        <TextView
+            android:id="@+id/garbage_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+            app:layout_constraintBottom_toTopOf="@+id/garbage_time"
+            app:layout_constraintEnd_toStartOf="@+id/garbage_tag"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="可燃ごみ" />
+
+        <TextView
+            android:id="@+id/garbage_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:textAppearance="@style/Shinoken.TextAppearance.Caption.DarkGray"
+            app:layout_constraintEnd_toStartOf="@+id/garbage_tag"
+            app:layout_constraintStart_toStartOf="@id/garbage_title"
+            app:layout_constraintTop_toBottomOf="@+id/garbage_title"
+            tools:text="前日 21:00" />
+
+        <TextView
+            android:id="@+id/garbage_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_week_sunday"
+            android:paddingStart="@dimen/margin_16"
+            android:paddingTop="@dimen/margin_4"
+            android:paddingEnd="@dimen/margin_16"
+            android:paddingBottom="@dimen/margin_4"
+            android:textAppearance="@style/Shinoken.TextAppearance.Caption.White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/garbage_arrow"
+            app:layout_constraintStart_toEndOf="@+id/garbage_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39"
+            tools:text="毎週火曜日" />
+
+        <ImageView
+            android:id="@+id/garbage_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:src="@drawable/ic_link_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/garbage_tag"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.contact.ContactFragment">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/contact_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/home_menu_header"
+                layout="@layout/item_home_menu_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_16"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_category"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_category"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/contact_category_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_name"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/name"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contact_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_building_name"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_building_name"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contact_building_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_room_number"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_room_number"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contact_room_number_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_building_address"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_building_address"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contact_building_address_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_mail_address"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_mail"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contact_mail_address_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_tel_number"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_tel_number"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contact_tel_number_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_address_prefectures"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_address_prefectures"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/contact_address_prefectures_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_age"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_age"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/contact_age_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/contact_radio_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/contact_sex"
+                        android:textAppearance="@style/Shinoken.TextAppearance.Body1.Black" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/contact_radio_sex_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_radio_male"
+                    tools:ignore="LabelFor" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/contact_radio_sex_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_radio_female"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    tools:ignore="LabelFor" />
+
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_profession"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_profession"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/contact_profession_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact_content"
+                    style="@style/Shinoken.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="@string/contact_content"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contact_content_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:gravity="top"
+                        android:inputType="textMultiLine" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <jp.co.shinoken.ui.widget.UnderLineTextView
+                        android:id="@+id/contact_help"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:underLineText="よくある質問" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/contact_send_button"
+                        style="@style/Theme.Shinoken.PrimaryButton.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:enabled="false"
+                        android:text="@string/send" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/margin_32"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/contact_tel_description"
+                        android:textAppearance="@style/Shinoken.TextAppearance.Body2.DarkBlue" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/contact_tel_phone"
+                        style="@style/Theme.Shinoken.PrimaryButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:text="@string/contact_tel_phone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

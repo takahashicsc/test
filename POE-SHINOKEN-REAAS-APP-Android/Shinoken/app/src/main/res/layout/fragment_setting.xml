@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.setting.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <jp.co.shinoken.ui.widget.LinkItemView
+            android:id="@+id/password_change_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:linkItemText="@string/setting_password_change" />
+
+        <jp.co.shinoken.ui.widget.LinkItemView
+            android:id="@+id/terms_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:linkItemText="@string/terms_title" />
+
+        <jp.co.shinoken.ui.widget.LinkItemView
+            android:id="@+id/license_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:linkItemText="@string/license_title" />
+
+        <include layout="@layout/view_divider" />
+
+        <LinearLayout
+            android:id="@+id/app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_16">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_app_version"
+                android:textAppearance="@style/Shinoken.TextAppearance.Body1.Black"
+                tools:text="1.0.0" />
+
+            <TextView
+                android:id="@+id/app_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Shinoken.TextAppearance.Body1.DarkGray"
+                tools:text="1.0.0" />
+        </LinearLayout>
+
+        <include layout="@layout/view_divider" />
+
+        <jp.co.shinoken.ui.widget.LinkItemView
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:linkItemText="@string/logout" />
+
+        <include layout="@layout/view_divider" />
+    </LinearLayout>
+</ScrollView>

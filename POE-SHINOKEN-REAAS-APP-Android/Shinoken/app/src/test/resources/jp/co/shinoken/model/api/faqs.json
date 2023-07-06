@@ -1,0 +1,366 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "設備",
+      "path": "/faq/cat/facility",
+      "image": null,
+      "status": "opened",
+      "serial_code": 0
+    },
+    {
+      "id": 2,
+      "name": "契約関連",
+      "path": "/faq/cat/contract",
+      "image": null,
+      "status": "opened",
+      "serial_code": 0
+    },
+    {
+      "id": 3,
+      "name": "家賃",
+      "path": "/faq/cat/rent",
+      "image": null,
+      "status": "opened",
+      "serial_code": 0
+    }
+  ],
+  "total": 9,
+  "data": [
+    {
+      "id": 58,
+      "title": "共用部に蜂の巣があります。",
+      "slug": "450c9af6cea90e91",
+      "start_at": "2021-03-22T13:42:23.000Z",
+      "end_at": "2121-03-22T13:42:23.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [
+        {
+          "kind": "deeplink",
+          "title": "お客様のマイページ",
+          "url": "shinoken-residentapp-demo:///mypage"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "title": "廊下の共用灯が点灯していません。",
+      "slug": "4edeabe68ae9a0b0",
+      "start_at": "2021-03-22T13:42:23.000Z",
+      "end_at": "2121-03-22T13:42:23.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [
+        {
+          "kind": "link",
+          "title": "シノケン企業概要",
+          "url": "https://www.shinoken.co.jp/about/company/"
+        },
+        {
+          "kind": "tel",
+          "title": "電話で問い合わせ",
+          "url": "0120-000-000"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "title": "退去月の家賃はどうなりますか。",
+      "slug": "00ea534bf0376d3f",
+      "start_at": "2021-03-22T13:42:23.000Z",
+      "end_at": "2121-03-22T13:42:23.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 2,
+          "name": "契約関連",
+          "path": "/faq/cat/contract",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        },
+        {
+          "id": 3,
+          "name": "家賃",
+          "path": "/faq/cat/rent",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [],
+      "categories": [
+        {
+          "id": 2,
+          "name": "契約関連",
+          "path": "/faq/cat/contract",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        },
+        {
+          "id": 3,
+          "name": "家賃",
+          "path": "/faq/cat/rent",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "共用部に蜂の巣があります。",
+      "slug": "6883cc9e61abf0e2",
+      "start_at": "2021-03-08T11:50:54.000Z",
+      "end_at": "2121-03-08T11:50:54.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [],
+      "categories": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "廊下の共用灯が点灯していません。",
+      "slug": "a0b9db280a17bfc2",
+      "start_at": "2021-03-08T11:50:54.000Z",
+      "end_at": "2121-03-08T11:50:54.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [],
+      "categories": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "退去月の家賃はどうなりますか。",
+      "slug": "f4cf59321273ce82",
+      "start_at": "2021-03-08T11:50:54.000Z",
+      "end_at": "2121-03-08T11:50:54.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 2,
+          "name": "契約関連",
+          "path": "/faq/cat/contract",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        },
+        {
+          "id": 3,
+          "name": "家賃",
+          "path": "/faq/cat/rent",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [],
+      "categories": [
+        {
+          "id": 2,
+          "name": "契約関連",
+          "path": "/faq/cat/contract",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        },
+        {
+          "id": 3,
+          "name": "家賃",
+          "path": "/faq/cat/rent",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "共用部に蜂の巣があります。",
+      "slug": "1476bbf143e4dfe9",
+      "start_at": "2021-02-17T21:24:09.000Z",
+      "end_at": "2121-02-17T21:24:09.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [],
+      "categories": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "廊下の共用灯が点灯していません。",
+      "slug": "4652a6c1e7e43119",
+      "start_at": "2021-02-17T21:24:09.000Z",
+      "end_at": "2121-02-17T21:24:09.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [],
+      "categories": [
+        {
+          "id": 1,
+          "name": "設備",
+          "path": "/faq/cat/facility",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "退去月の家賃はどうなりますか。",
+      "slug": "902dd8307e6c1ebb",
+      "start_at": "2021-02-17T21:24:09.000Z",
+      "end_at": "2121-02-17T21:24:09.000Z",
+      "content_text": "ガスメーターの安全装置がはたらき、ガスの供給が...",
+      "images": [],
+      "labels": [
+        {
+          "id": 2,
+          "name": "契約関連",
+          "path": "/faq/cat/contract",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        },
+        {
+          "id": 3,
+          "name": "家賃",
+          "path": "/faq/cat/rent",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ],
+      "links": [],
+      "categories": [
+        {
+          "id": 2,
+          "name": "契約関連",
+          "path": "/faq/cat/contract",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        },
+        {
+          "id": 3,
+          "name": "家賃",
+          "path": "/faq/cat/rent",
+          "image": null,
+          "status": "opened",
+          "serial_code": 0
+        }
+      ]
+    }
+  ]
+}

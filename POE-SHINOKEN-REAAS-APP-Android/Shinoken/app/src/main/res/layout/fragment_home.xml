@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.home.HomeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/bg_home" />
+
+    <EditText
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:background="@drawable/bg_search_layout"
+        android:drawableStart="@drawable/ic_search_icon"
+        android:drawablePadding="@dimen/margin_8"
+        android:hint="契約、お手続き、その他"
+        android:inputType="text"
+        android:padding="@dimen/margin_8"
+        android:textAppearance="@style/Shinoken.TextAppearance.Body1.White"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_16">
+
+        <LinearLayout
+            android:id="@+id/head_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/button_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/home_head_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:autoSizeTextType="uniform"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                tools:text="おはようございます"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:autoSizeMinTextSize="18sp" />
+
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_16"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/head_layout"
+            app:layout_constraintTop_toTopOf="@+id/head_layout">
+
+            <ImageView
+                android:id="@+id/account_switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_switch" />
+
+            <ImageView
+                android:id="@+id/setting_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:src="@drawable/ic_setting" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/weather_temperatures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/weather_img"
+            app:layout_constraintEnd_toStartOf="@+id/weather_img"
+            app:layout_constraintTop_toTopOf="@+id/weather_img"
+            tools:text="@string/weather_temperatures_format" />
+
+        <ImageView
+            android:id="@+id/weather_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_weather_clear"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- FIXME: 動的に位置調整したい -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/home_menu_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        app:behavior_skipCollapsed="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

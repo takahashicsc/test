@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.account_detail.AccountDetailFragment">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/account_detail_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:id="@+id/account_detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                app:cardBackgroundColor="@color/dark_blue"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                app:contentPaddingBottom="@dimen/margin_24"
+                app:contentPaddingLeft="@dimen/margin_16"
+                app:contentPaddingRight="@dimen/margin_16"
+                app:contentPaddingTop="@dimen/margin_24">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ご契約状況"
+                            android:textAppearance="@style/Shinoken.TextAppearance.Caption2.White" />
+
+                        <TextView
+                            android:id="@+id/contract_status"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="契約中"
+                            android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.White" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_32">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物件名"
+                            android:textAppearance="@style/Shinoken.TextAppearance.Caption2.White" />
+
+                        <TextView
+                            android:id="@+id/contract_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.White"
+                            tools:text="物件名が入ります" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <include layout="@layout/view_divider" />
+
+            <LinearLayout
+                android:id="@+id/detail_document_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <jp.co.shinoken.ui.widget.LinkItemView
+                    android:id="@+id/detail_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:linkItemText="@string/account_detail_document_title" />
+
+                <include layout="@layout/view_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contract_update_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <jp.co.shinoken.ui.widget.LinkItemView
+                    android:id="@+id/contract_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:linkItemText="@string/account_detail_contract_update_title" />
+
+                <include layout="@layout/view_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_16">
+
+                <TextView
+                    android:id="@+id/name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue" />
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+                    tools:text="田中 太郎" />
+
+                <TextView
+                    android:id="@+id/name_kana_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_32"
+                    android:text="@string/name_kana"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue" />
+
+                <TextView
+                    android:id="@+id/name_kana_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+                    tools:text="タナカ タロウ" />
+
+                <TextView
+                    android:id="@+id/phone_number_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_32"
+                    android:text="@string/contract_update_phone_number"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue" />
+
+                <TextView
+                    android:id="@+id/phone_number_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+                    tools:text="00000000000" />
+
+                <TextView
+                    android:id="@+id/birthday_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_32"
+                    android:text="@string/birth_day"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Caption2.DarkBlue" />
+
+                <TextView
+                    android:id="@+id/birthday_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:textAppearance="@style/Shinoken.TextAppearance.Subtitle.Black"
+                    tools:text="1987年9月22日" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

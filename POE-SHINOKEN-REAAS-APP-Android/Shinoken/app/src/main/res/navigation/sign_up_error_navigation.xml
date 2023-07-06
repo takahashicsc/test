@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_error_navigation"
+    app:startDestination="@id/signUpErrorFragment">
+    <fragment
+        android:id="@+id/signUpErrorFragment"
+        android:name="jp.co.shinoken.ui.fragment.sign_up_error.SignUpErrorFragment"
+        android:label="@string/sign_up_title"
+        tools:layout="@layout/fragment_sign_up_error">
+        <action
+            android:id="@+id/action_signUpErrorFragment_to_signInSupportMailFormFragment2"
+            app:destination="@id/signInSupportMailFormFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInSupportMailFormFragment2"
+        android:name="jp.co.shinoken.ui.fragment.sign_in_support.SignInSupportMailFormFragment"
+        android:label="@string/sign_in_support_mail_form_title"
+        tools:layout="@layout/fragment_sign_in_support_mail_form" />
+</navigation>

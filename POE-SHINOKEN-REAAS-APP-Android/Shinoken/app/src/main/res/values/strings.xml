@@ -1,0 +1,337 @@
+<resources>
+    <string name="app_name">シノケンコンシェルジュfor入居者</string>
+    <string name="empty_dummy">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</string>
+    <string name="next">次へ</string>
+    <string name="back">戻る</string>
+    <string name="logout">ログアウト</string>
+    <string name="new_password">新しいパスワード</string>
+    <string name="new_password_confirm">新しいパスワードをもう一度入力</string>
+    <string name="save">保存</string>
+    <string name="old_password">現在のパスワード</string>
+    <string name="send">送信</string>
+    <string name="change">変更</string>
+    <string name="cancel">キャンセル</string>
+    <string name="update">更新</string>
+    <string name="email">メールアドレス</string>
+    <string name="electricity">電気</string>
+    <string name="gas">ガス</string>
+    <string name="house_rent">家賃・その他</string>
+    <string name="tap">水道</string>
+    <string name="unit">¥</string>
+    <string name="unit_format">¥%,d</string>
+    <string name="category">カテゴリー</string>
+    <string name="start">はじめる</string>
+    <string name="name">お名前</string>
+    <string name="certification">認証</string>
+    <string name="asterisk">*</string>
+    <string name="upload">アップロード</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="empty_text_format">%sはまだありません</string>
+    <string name="account_building_name_format">%1s %2s</string>
+    <string name="account_name_format">%s 様</string>
+    <string name="code_form_description_mail_format">・「%s」宛に認証コードを送信しました。</string>
+    <string name="code_form_resend_code_dialog_title">認証コードを再送しました</string>
+    <string name="code_form_resend_code_dialog_message">メールに届いた認証コードをご確認ください</string>
+    <string name="reload">再読み込み</string>
+    <string name="fee_format">%,d</string>
+    <string name="bill_detail_fee_format">¥%,d</string>
+    <string name="birth_day_format">%1$d年 %2$d月 %3$d日</string>
+    <string name="permission_storage_error_message">ストレージへのアクセス権限を許可して下さい。</string>
+
+    <!-- screen title -->
+    <string name="license_title">ライセンス</string>
+    <string name="home_title">ホーム</string>
+    <string name="setting_title">設定</string>
+    <string name="terms_title">利用規約</string>
+    <string name="topics_title">シノケンメディア</string>
+    <string name="login">ログイン</string>
+    <string name="charges_title">ご請求一覧</string>
+    <string name="password_reset_title">パスワードをお忘れの方</string>
+    <string name="sign_in_support_mail_form_title">メールでのお問い合わせ</string>
+    <string name="sign_in_support_title">お問い合わせ</string>
+    <string name="password_change_title">ログインパスワード変更</string>
+    <string name="walk_through_title">ウォークスルー</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="notifications_title">掲示板・お知らせ</string>
+    <string name="account_title">各種お手続き</string>
+    <string name="manual_title">住まいのマニュアル</string>
+    <string name="contact_title">お問い合わせ</string>
+    <string name="account_switch_title">物件切り替え</string>
+    <string name="phone_number">電話番号</string>
+    <string name="password">パスワード</string>
+    <string name="password_confirm">パスワード再入力</string>
+    <string name="app_logo">アプリケーションロゴ</string>
+    <string name="confirm_code">認証コード</string>
+    <string name="full_name">お名前 (フルネーム)</string>
+    <string name="name_kana">フリガナ</string>
+    <string name="account_detail_section_title">ご契約内容の確認・更新</string>
+    <string name="account_detail_title">ご契約内容の確認</string>
+    <string name="account_insurance_title">家財保険加入</string>
+    <string name="account_cohabitant_title">入居者</string>
+    <string name="account_procedure_section_title">お手続き</string>
+    <string name="account_check_form_title">入居時の室内状況チェックシート</string>
+    <string name="account_contact_title">ライフラインの連絡先</string>
+    <string name="account_mail_transfer_title">郵便物転送お手続き</string>
+    <string name="account_cancel_form_title">退去をお考えの方へ</string>
+    <string name="account_detail_document_title">契約書の確認</string>
+    <string name="account_detail_contract_update_title">契約更新お手続き</string>
+    <string name="cohabitant_register_title">同居人申請</string>
+    <string name="faq_title">よくある質問</string>
+    <string name="coupon_title">入居者様特典</string>
+    <string name="sign_up_title">アプリ利用登録</string>
+    <string name="sign_up_code_form_title">アプリ利用登録</string>
+    <string name="garbages_title">ゴミの日通知</string>
+    <string name="life_line_contacts_title">ライフライン連絡先</string>
+    <string name="search_title">検索</string>
+    <string name="insurance_title">家財保険</string>
+    <string name="insurance_detail_title">契約更新のお手続き</string>
+    <string name="sunday">日曜日</string>
+    <string name="monday">月曜日</string>
+    <string name="tuesday">火曜日</string>
+    <string name="wednesday">水曜日</string>
+    <string name="thursday">木曜日</string>
+    <string name="friday">金曜日</string>
+    <string name="saturday">土曜日</string>
+    <string name="period_format">%1$s - %2$s</string>
+
+    <!-- launcher screen -->
+    <!-- TODO アップデートメッセージ -->
+    <string name="launcher_screen_error_title">アップデートがあります</string>
+    <string name="launcher_screen_error_description">アプリをアップデート後、ご利用ください</string>
+
+    <!-- login screen -->
+    <string name="sign_in_support_text">ログインできない場合のお問い合わせ</string>
+    <string name="sign_up_button">アプリ利用登録</string>
+    <string name="sign_up_text">初めてアプリをご利用の方はこちら</string>
+    <string name="sign_in_error_user_not_exists_title">ログインに失敗しました</string>
+    <string name="sign_in_error_user_not_exists_message">弊社にて登録しておりますメールアドレスと一致しないため、以下の＜ログインできない場合のお問合わせ＞より、ご連絡をお願いいたします。</string>
+
+    <!-- sign up screen -->
+    <string name="sign_up_helper_text">パスワードは8文字以上、大文字、小文字、数字、記号が必須になります。</string>
+
+    <!-- home screen -->
+    <string name="home_item_account_text">各種お手続き</string>
+    <string name="home_item_announcement_text">お知らせ / 掲示板</string>
+    <string name="home_message_morning">おはようございます</string>
+    <string name="home_message_daytime">こんにちは</string>
+    <string name="home_message_night">こんばんは</string>
+
+    <!-- setting screen -->
+    <string name="setting_password_change">ログインパスワードの変更</string>
+    <string name="setting_app_version">アプリバージョン</string>
+    <string name="logout_confirm_message">ログアウトしますか？</string>
+
+    <!-- sign in support screen -->
+    <string name="sign_in_support_warning_title">注意事項</string>
+    <string name="sign_in_support_warning_message">当フォームからのお問い合わせ後、担当からお電話もしくはメールにてご連絡いたします。（メールはnyukyosha-app@info.shinoken.co.jpより送信されます）\n\n＜各種ご案内メールが届かない場合＞\n\nフリーメールアドレスや携帯電話のメールアドレスをご入力された場合、弊社からのメールが届かない場合がございます。\nフォームよりご連絡いただく前に、必ず『迷惑メール設定』 『受信拒否設定』『指定ドメイン受信設定』などの設定内容を確認し、＠info.shinoken.co.jpからのメールが受信できる状態にしてください。\n\n※個人情報お取り扱いについてはプライバシーポリシーをご参照ください。\n内容確認し同意の上、送信してください。</string>
+    <string name="sign_in_support_warning_button_text">送信</string>
+    <string name="sign_in_support_warning_under_line_text">プライバシーポリシー</string>
+    <string name="sign_in_support_send_success_message">送信しました。お手数をおかけしますが、担当からのご連絡をおまちください。</string>
+    <string name="sign_in_support_description">ログインに関するお問い合わせは、お電話またはメールにてお受け付けしております。\n以下より、ご連絡ください。</string>
+    <string name="sign_in_support_phone_number">0570-07-2000</string>
+    <string name="sign_in_support_phone_number_text">受付時間 9:00〜18:00　営業日 年末年始・日祝除く</string>
+
+
+    <!-- password_reset screen -->
+    <string name="password_reset_message">パスワードをリセットします</string>
+    <string name="password_reset_description">メールアドレスを入力し、送信を押すと認証コードが届きます。</string>
+    <string name="password_reset_description2">次の画面で認証コードと新しいパスワードを入力してください。</string>
+    <string name="password_reset_description3">ドメインの指定受信をされている方は、認証メールを受け取れるよう、＠info.shinoken.co.jpの受信設定をお願いします。</string>
+    <string name="password_reset_input_form_help">認証コードが届かないとき</string>
+    <string name="password_reset_input_form_description1">・届いた認証コードと新しいパスワードを設定してください。</string>
+    <string name="password_reset_input_form_description2">・認証コードの有効期限は60分です。</string>
+    <string name="password_reset_input_form_success">パスワードを変更しました。ログイン画面から再度ログインしてください。</string>
+    <string name="contract_phone_number">ご契約時に登録いただいたお電話番号</string>
+    <string name="contract_mail">ご契約時に登録いただいたメールアドレス</string>
+    <string name="inquiry_content">お問い合わせ内容</string>
+
+    <!-- notifications screen -->
+    <string name="notifications_board">掲示板</string>
+    <string name="notifications_notification">お知らせ</string>
+    <string name="profile_image">プロフィール画像</string>
+    <string name="boards_empty">掲示板はまだありません</string>
+    <string name="notifications_empty">お知らせはまだありません</string>
+
+    <!-- account screen -->
+    <string name="account_check_form_link">入居時の室内状況チェックシート</string>
+    <string name="account_check_form_status_draft">未提出</string>
+    <string name="account_check_form_status_submitted">提出済み</string>
+    <string name="account_contract_active">契約中</string>
+    <string name="account_contract_inactive">手続き中</string>
+    <string name="account_contract_renewal_format">契約更新まであと%d日</string>
+
+
+    <!-- account_detail screen -->
+    <string name="birth_day">生年月日</string>
+
+    <!-- account_switch screen -->
+    <string name="account_switch_description_format">契約開始 %1s / 契約終了予定 %2s</string>
+
+    <!-- contract screen -->
+    <string name="contract_update_phone_number">ご連絡先</string>
+    <string name="contract_update_dialog_title">注意事項</string>
+    <string name="contract_update_dialog_message">更新申請後、更新手続き完了のメールを送信いたします。（nyukyosha-app@info.shinoken.co.jpより送信されます）\n\nまた、翌営業日以降に当社より「今後のお手続き」を記したご案内メールを送信（fcl-info@shinoken.co.jpより送信されます）いたしますので、万一数日経ってもご案内メールが届かない場合は、誠にお手数ですが当社までお問合せください。\n\n＜各種ご案内メールが届かない場合＞\nフリーメールアドレスや携帯電話のメールアドレスをご入力された場合、弊社からのメールが届かない場合がございます。\nフォームよりご連絡いただく前に、必ず『迷惑メール設定』 『受信拒否設定』『指定ドメイン受信設定』などの設定内容を確認し、＠shinoken.co.jpからのメールが受信できる状態にしてください。\n※個人情報お取り扱いについてはプライバシーポリシーをご参照ください。\n内容確認し同意の上、送信してください。</string>
+    <string name="contract_update_dialog_button_text">更新</string>
+    <string name="contract_update_dialog_under_line_text">プライバシーポリシー</string>
+    <string name="contract_update_success_dialog_title">更新お手続きを申請しました</string>
+    <string name="contract_update_success_dialog_message">詳細はメールをご確認ください</string>
+    <string name="contract_update_description">※お客様情報に変更のあった方は、必ず変更してください。</string>
+    <string name="contract_update_form_title">更新内容</string>
+    <string name="contract_update_name">お名前</string>
+
+    <!-- cohabitant screen -->
+    <string name="cohabitant_title">入居者・同居人管理</string>
+    <string name="cohabitant">同居人</string>
+    <string name="reside">入居者または契約者</string>
+    <string name="cohabitant_form_name">お名前</string>
+    <string name="cohabitant_form_birthday">生年月日</string>
+    <string name="cohabitant_request">申請</string>
+    <string name="cohabitant_delete">同居人を削除</string>
+    <string name="cohabitant_form_dialog_title">同居人申請を行いますか？</string>
+    <string name="cohabitant_form_dialog_message">一度提出した申請情報は取り消せません</string>
+    <string name="cohabitant_form_success">申請を行いました。審査後、申請者様と同居者様にメールにて結果をおおくりします。</string>
+    <string name="cohabitant_delete_success">削除しました\n再度、同居人登録を行うには申請する必要があります。</string>
+    <string name="cohabitant_delete_dialog_title">同居人の登録を削除しますか？</string>
+    <string name="cohabitant_delete_dialog_message">一度削除すると、元に戻せません。</string>
+    <string name="cohabitant_status_approve">入居中</string>
+    <string name="cohabitant_show_charge_title">請求情報を見せる</string>
+
+    <string name="cohabitant_status_pending">申請中</string>
+    <string name="cohabitant_status_reject">却下済</string>
+
+    <!-- charges screen -->
+    <string name="charges_description1">毎月27日（金融機関休業日の場合は翌営業日）に翌月分を口座引落します。</string>
+    <string name="charges_description2">引落手数料または振込手数料は、借主様の負担となります。</string>
+    <string name="charges_description3">※賃貸管理契約をシノケンファシリティーズ以外で締結されているお客様は、上記以外のお支払いがある場合がございます。ご契約の賃貸管理会社へご確認ください。</string>
+    <string name="charges_latest_date_format">%1$s年%2$s月</string>
+    <string name="charge_electricity_fee">電気代</string>
+    <string name="charge_gas_fee">ガス代</string>
+    <string name="charge_house_rent">家賃</string>
+    <string name="charge_tap">水道代</string>
+    <string name="charge_administrative">管理費</string>
+    <string name="charge_updated_at_format">最終更新日：%s</string>
+    <string name="charge_detail_section_date_format">%1$s年%2$s月分</string>
+    <string name="charges_date_format">%1$s.%2$s</string>
+    <string name="charge_detail_caution1">毎月27日（金融機関休業日の場合は翌営業日）に翌月分を口座引落します。</string>
+    <string name="charge_detail_caution2">引落手数料または振込手数料は、借主様の負担となります。</string>
+    <string name="charge_detail_caution3">※賃貸管理契約をシノケンファシリティーズ以外で締結されているお客様は、上記以外のお支払いがある場合がございます。ご契約の賃貸管理会社へご確認ください。</string>
+
+    <!-- check_form screen -->
+    <string name="check_form_submit">提出する</string>
+    <string name="check_form_unchecked_description">報告</string>
+    <string name="check_form_point_dialog_text">チェック内容</string>
+    <string name="check_form_submit_success_message">提出しました\n提出した内容はあとから見返すことができます</string>
+    <string name="check_form_deadline_format">提出期限：%s</string>
+    <string name="check_form_submit_dialog_description">※一度提出したチェックフォームは修正できません。\n\n※問題があった箇所の修繕をご希望の場合は以下の項目にチェックを入れて提出してください。</string>
+    <string name="check_form_submit_dialog_title">提出しますか？</string>
+    <string name="check_form_submit_dialog_checked">修繕を希望する</string>
+    <string name="check_form_submit_dialog_submit">提出</string>
+    <string name="check_form_description">ご入居時に傷や汚れがあった場所についてご連絡ください。連絡して頂くことで解約時のトラブル防止につながりますので、ご対応よろしくお願いします。\n問題がなければ「✓」を、問題があれば「×」をお選びください。\n「×」の場合、フリースペースにどの部分にどんな問題があるか記載し、該当箇所の写真をアップロードしてください。\nまた、全ての項目を選ばないと提出することはできません。全ての項目を選択後、提出するボタンを押してください。\n契約開始日1ヶ月以上経過し提出かつ修繕が必要な場合は、故意過失と判断させて頂く可能性がございますので、契約日1ヶ月以内にお部屋の確認およびご提出をお願い致します。\n提出をせず修繕必要箇所が見つかった場合は、ご請求の可能性がございますのでご注意ください。</string>
+
+    <!-- terms screen -->
+    <string name="terms_text">これは平生もちろんそのお話社といったののところのいたた。けっして一生が吹聴めももしその発達だろうだけにしてならましには関係するでたけれども、当然には這入っないあっでです。口が見だろのは何だか結果をもしまいでな。何だか岡田さんを説明政府始終安心と起るな個人この例外どこか奨励をというお意味あるないつなて、どういう生涯は誰か教授態度に取り消せて、岡田さんの事が不平の私のまあ今講演とさて私飯をご切望をやっように同時にご批評が思っなですので、けっして何だか解釈がしたているありのの考えないだ。しかしそれからご他に含まのもそう自由とするまいて、どんな自分をは聴いんてに対する文学で濁していました。\n\nこれは平生もちろんそのお話社といったののところのいたた。けっして一生が吹聴めももしその発達だろうだけにしてならましには関係するでたけれども、当然には這入っないあっでです。口が見だろのは何だか結果をもしまいでな。何だか岡田さんを説明政府始終安心と起るな個人この例外どこか奨励をというお意味あるないつなて、どういう生涯は誰か教授態度に取り消せて、岡田さんの事が不平の私のまあ今講演とさて私飯をご切望をやっように同時にご批評が思っなですので、けっして何だか解釈がしたているこれは平生もちろんそのお話社といったののところのいたた。けっして一生が吹聴めももしその発達だろうだけにしてならましには関係するでたけれども、当然には這入っないあっでです。</string>
+
+    <!-- password_change screen -->
+    <string name="password_change_success">パスワードを変更しました</string>
+
+    <!-- contact screen -->
+    <string name="contact_mail">ご連絡先メールアドレス</string>
+    <string name="contact_tel_number">電話番号</string>
+    <string name="contact_content">お問い合わせ内容</string>
+    <string name="contact_category">カテゴリ</string>
+    <string name="contact_status_common_area">共用部</string>
+    <string name="contact_status_gas">ガス周り</string>
+    <string name="contact_caution_dialog_title">注意事項</string>
+    <string name="contact_caution_dialog_message">お問い合わせ後、3営業日以内にメールにてご連絡いたします。（nyukyosha-app@info.shinoken.co.jpより送信されます）\n\n＜各種ご案内メールが届かない場合＞\nフリーメールアドレスや携帯電話のメールアドレスをご入力された場合、弊社からのメールが届かない場合がございます。\nフォームよりご連絡いただく前に、必ず『迷惑メール設定』 『受信拒否設定』『指定ドメイン受信設定』などの設定内容を確認し、＠info.shinoken.co.jpからのメールが受信できる状態にしてください。\n※個人情報お取り扱いについてはプライバシーポリシーをご参照ください。\n内容確認し同意の上、送信してください。</string>
+    <string name="contact_caution_dialog_button_text">送信</string>
+    <string name="contact_caution_dialog_under_line_text">プライバシーポリシー</string>
+    <string name="contact_send_success">お問い合わせを受け付けました。\n担当からのご連絡をお待ち下さい</string>
+    <string name="contact_tel_phone">シノケンコールセンターに電話する</string>
+    <string name="contact_category_help_format">%sのよくある質問</string>
+    <string name="contact_name">お名前</string>
+    <string name="contact_building_name">物件名</string>
+    <string name="contact_building_address">物件所在地</string>
+    <string name="contact_room_number">部屋番号</string>
+    <string name="contact_address_prefectures">都道府県</string>
+    <string name="contact_radio_male">男</string>
+    <string name="contact_radio_female">女</string>
+    <string name="contact_age">ご年齢</string>
+    <string name="contact_sex">性別：</string>
+    <string name="contact_profession">ご職業</string>
+
+    <!-- faq screen -->
+    <string name="category_icon">カテゴリーのアイコン</string>
+    <string name="faq_question">Q.</string>
+    <string name="faq_description_tel_phone_button">シノケンコールセンターに電話する</string>
+
+    <!-- sign_up screen -->
+    <string name="sign_up_tel_phone">物件契約時にご登録いただいた電話番号</string>
+    <string name="code_send">認証コード送信</string>
+    <string name="sign_up_code_form_help">認証コードが届かないとき</string>
+    <string name="sign_up_code_form_success">アプリ利用登録が完了しました</string>
+
+
+    <!-- life_line screen -->
+    <string name="lifeline_electricity_description">電気に関するお問い合わせは、入居者さまがご契約されている電力会社にお問い合わせください。</string>
+
+    <!-- screen -->
+    <string name="insurance_form_dialog_title">注意事項</string>
+    <string name="insurance_form_dialog_message">更新申請後、更新手続き完了のメールを送信いたします。（nyukyosha-app@info.shinoken.co.jpより送信されます）\n\nまた、翌営業日以降に当社より「今後のお手続き」を記したご案内メールを送信（fcl-info@shinoken.co.jpより送信されます）いたしますので、万一数日経ってもご案内メールが届かない場合は、誠にお手数ですが当社までお問合せください。\n\n＜各種ご案内メールが届かない場合＞\nフリーメールアドレスや携帯電話のメールアドレスをご入力された場合、弊社からのメールが届かない場合がございます。\nフォームよりご連絡いただく前に、必ず『迷惑メール設定』 『受信拒否設定』『指定ドメイン受信設定』などの設定内容を確認し、＠shinoken.co.jpからのメールが受信できる状態にしてください。\n※個人情報お取り扱いについてはプライバシーポリシーをご参照ください。\n内容確認し同意の上、送信してください。</string>
+    <string name="insurance_form_dialog_button_text">更新</string>
+    <string name="insurance_form_dialog_under_line_text">プライバシーポリシー</string>
+    <string name="insurance_form_success_dialog_title">更新お手続きを申請しました</string>
+    <string name="insurance_form_success_dialog_message">詳細はメールをご確認ください</string>
+    <string name="insurance_header">保険内容</string>
+    <string name="total">合計</string>
+
+
+    <!-- garbage screen -->
+    <string name="garbage_list_title">一覧</string>
+    <string name="garbage_detail_setting_text">通知内容の設定</string>
+    <string name="garbage_detail_notification_date_type">通知日</string>
+    <string name="garbage_detail_notification_date">通知時間</string>
+    <string name="garbage_detail_notification_type">収集日</string>
+    <string name="collection_date_type">収集日</string>
+    <string name="select_week">指定回目</string>
+    <string name="select_day_of_month_text">毎月指定日</string>
+    <string name="select_day_text">指定日</string>
+    <string name="format_weekly">毎週%s</string>
+    <string name="format_specific_interval">第%1$d%2$s</string>
+    <string name="format_monthly">毎月%s</string>
+    <string name="format_time">%1s %2$02d:%3$02d</string>
+    <string name="before_0day">当日</string>
+    <string name="before_1day">前日</string>
+    <string name="sign_up_code_form_description">・認証コードの有効期限は60分です。</string>
+    <string name="close">閉じる</string>
+    <string name="sign_up_error_headline">会員情報がありません</string>
+    <string name="sign_up_error_subtitle">考えられる原因</string>
+    <string name="sign_up_error_text1">・入力した電話番号がご契約時にご登録いただいた電話番号と違う</string>
+    <string name="sign_up_error_description1">ご契約時にご登録いただいた電話番号で再度登録し直してください。</string>
+    <string name="sign_up_error_text2">・入居申し込みがまだ完了していない</string>
+    <string name="sign_up_error_description2">本アプリをご利用いただくには事前に入居申し込みが必要です。入居申し込み完了後、登録してください。</string>
+    <string name="sign_up_error_text3">・登録した情報がまだ反映されていない</string>
+    <string name="sign_up_error_description3">入居申し込み時にご登録いただいた情報が反映されるまで、お手数ですがしばらくお待ちください。</string>
+    <string name="sign_up_error_contact_head">お問い合わせはこちら</string>
+    <string name="sign_up_error_contact_phone_number">0570-07-2000</string>
+    <string name="sign_up_error_contact_description">受付時間 9:00〜18:00　営業日 年末年始・日祝除く</string>
+    <string name="sign_up_error_contact_email">メールでのお問い合わせ</string>
+    <string name="sign_up_error_contact_time">24時間受付中</string>
+    <string name="home_menu_suggestion">お困りのことはございませんか？</string>
+    <string name="weather_temperatures_format">%1$s℃ / %2$s℃</string>
+    <string name="sign_up_message2">ご入力の内容は、入居時から使えるシノケンコンシェルジュfor入居者のログイン情報となります。</string>
+    <string name="sign_up_description4">ドメインの指定受信をされている方は、認証メールを受け取れるよう、＠info.shinoken.co.jpの受信設定をお願いします。</string>
+
+    <!-- error dialog -->
+    <string name="network_error_default_title">通信に失敗しました</string>
+    <string name="network_error_default_message">通信環境の良いところで再度お試しください。</string>
+    <string name="number_of_people_format">%d名</string>
+    <string name="cohabitant_show_charge_description">オンにすると、ホーム画面にご請求一覧のメニューが表示されます</string>
+
+    <!-- notification -->
+    <string name="push_channel_info">通知を表示する</string>
+    <string name="push_channel_info_description">お知らせを通知します。</string>
+    <string name="push_channel_info_id">NOTIFICATION_CHANNEL</string>
+    <string name="contact_tel_description">受付時間：9:00〜18:00\n営業日：年末年始・日祝除く</string>
+</resources>
